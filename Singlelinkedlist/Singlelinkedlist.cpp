@@ -166,7 +166,7 @@ int main() {
 				if (deleteNode(nim)) {
 					cout << "nim: " << nim << " berhasil dihapus " << endl;
 					system("pause");
-					system(cls);
+					system("cls");
 				}
 				else
 					cout << "Data tidak ditemukan" << endl;
@@ -176,14 +176,19 @@ int main() {
 				break;
 			case 4:
 				searchData();
-			case 5;
+			case 5:
 				break;
 			default:
 				cout << "Pilihan tidak ada" << endl;
 				break;
 			}
 		}
-	}
+		catch (exception e)
+		{
+			cout << "Terjadi kesalahan" << endl;
+		}
+
+	} while (pilihan != 5);
 }
 
 
